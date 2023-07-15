@@ -10,7 +10,7 @@
 - 不容易被 PaaS 平台封锁检测
 - 简单易用，支持自定义端口和 UUID
 - 可以使用 Dockerfile 部署
-- 可以在 fly.io replit codesandbox 上部署。 [如何部署](#related-projects)
+- 可以在 fly.io replit codesandbox 上部署。 [如何部署](https://github.com/3Kmfi6HP/nodejs-proxy#相关项目)
 
 ## 安装
 

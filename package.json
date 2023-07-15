@@ -5,10 +5,12 @@
   "keywords": [
     "vless",
     "proxy",
+    "tunnel",
     "v2ray",
     "v2ray-proxy",
     "nodejs-proxy",
     "nodejs-v2ray",
+    "nodejs-vless",
     "nodejs-vless-proxy"
   ],
   "main": "index.js",
