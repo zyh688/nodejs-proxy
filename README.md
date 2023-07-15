@@ -2,6 +2,16 @@
 
 `@3kmfi6hp/nodejs-proxy` 是一个 Node.js 包，用于简单实现 vless。支持在各种 Node.js 环境下运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。用于各种 paas 平台，如：replit、heroku 等。
 
+![GitHub license](https://img.shields.io/github/license/3Kmfi6HP/nodejs-proxy)
+[![npm](https://img.shields.io/npm/v/@3kmfi6hp/nodejs-proxy)](https://www.npmjs.com/package/@3kmfi6hp/nodejs-proxy)
+
+## 项目优点
+
+- 不容易被 PaaS 平台封锁检测
+- 简单易用，支持自定义端口和 UUID
+- 可以使用 Dockerfile 部署
+- 可以在 fly.io replit codesandbox 上部署。 [如何部署](#related-projects)
+
 ## 安装
 
 使用 npm 安装：
