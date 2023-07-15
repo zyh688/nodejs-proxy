@@ -1,16 +1,16 @@
 # @3kmfi6hp/nodejs-proxy
 
-`@3kmfi6hp/nodejs-proxy` 是一个 Node.js 包，用于简单实现 vless。支持在各种 Node.js 环境下运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。用于各种 paas 平台，如：replit、heroku 等。
+`@3kmfi6hp/nodejs-proxy` 是一个基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。
 
 ![GitHub license](https://img.shields.io/github/license/3Kmfi6HP/nodejs-proxy)
 [![npm](https://img.shields.io/npm/v/@3kmfi6hp/nodejs-proxy)](https://www.npmjs.com/package/@3kmfi6hp/nodejs-proxy)
 
-## 优点
+## 特性
 
-- 不容易被 PaaS 平台封锁检测
-- 简单易用，支持自定义端口和 UUID
-- 可以使用 Dockerfile 部署
-- 可以在 fly.io replit codesandbox 上部署。 [如何部署](https://github.com/3Kmfi6HP/nodejs-proxy#相关项目)
+- 在 PaaS 平台上更难被检测和封锁
+- 使用简单，支持自定义端口和 UUID
+- 支持通过 Dockerfile 部署
+- 可在 fly.io、replit、codesandbox 等平台上部署。 [部署方法](https://github.com/3Kmfi6HP/nodejs-proxy#相关项目)
 
 ## 安装
 
@@ -196,11 +196,11 @@ start = "nodejs-proxy"
 
 ## 相关项目
 
-- [nodejs-proxy-fly.io](https://github.com/3Kmfi6HP/nodejs-proxy-fly.io) - @3kmfi6hp/nodejs-proxy for fly.io platform.
-- [nodejs-proxy-replit](https://github.com/3Kmfi6HP/nodejs-proxy-replit) - @3kmfi6hp/nodejs-proxy for replit platform.
-- [nodejs-proxy-codesandbox](https://github.com/3Kmfi6HP/nodejs-proxy-codesandbox) - @3kmfi6hp/nodejs-proxy for codesandbox platform.
+- [nodejs-proxy-fly.io](https://github.com/3Kmfi6HP/nodejs-proxy-fly.io) - 针对 fly.io 平台的 @3kmfi6hp/nodejs-proxy。
+- [nodejs-proxy-replit](https://github.com/3Kmfi6HP/nodejs-proxy-replit) - 针对 replit 平台的 @3kmfi6hp/nodejs-proxy。
+- [nodejs-proxy-codesandbox](https://github.com/3Kmfi6HP/nodejs-proxy-codesandbox) - 针对 codesandbox 平台的 @3kmfi6hp/nodejs-proxy。
 
-这些项目旨在为不同平台提供简单易用的 Node.js 代理。它们允许用户轻松地在其首选平台上部署和使用代理服务器，并提供了一种安全、私密地访问互联网的便捷方式。每个项目都针对特定的平台进行了定制，并提供了与平台特性和功能的无缝集成。
+这些项目旨在为不同平台提供简单易用的 Node.js 代理。它们允许用户轻松地在其首选平台上部署和使用代理服务器，并提供了一种安全、私密地访问互联网的便捷方式。每个项目都针对特定的平台进行了定制，并提供了与平台特性和功能的无缝集成
 
 ## 免责声明
 
