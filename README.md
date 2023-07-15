@@ -5,7 +5,7 @@
 ![GitHub license](https://img.shields.io/github/license/3Kmfi6HP/nodejs-proxy)
 [![npm](https://img.shields.io/npm/v/@3kmfi6hp/nodejs-proxy)](https://www.npmjs.com/package/@3kmfi6hp/nodejs-proxy)
 
-## 项目优点
+## 优点
 
 - 不容易被 PaaS 平台封锁检测
 - 简单易用，支持自定义端口和 UUID
@@ -14,25 +14,39 @@
 
 ## 安装
 
-使用 npm 安装：
+您可以通过 npm 全局安装 @3kmfi6hp/nodejs-proxy：
 
 ```bash
-npm i -g @3kmfi6hp/nodejs-proxy
+npm install -g @3kmfi6hp/nodejs-proxy
+```
+
+如果您不想全局安装，也可以在项目目录下执行以下命令进行安装：
+
+```bash
+npm install @3kmfi6hp/nodejs-proxy
 ```
 
 ## 使用
+
+在安装完成后，您可以通过以下命令启动代理服务：
 
 ```bash
 nodejs-proxy
 ```
 
-自定义端口 和 uuid：
+### 自定义端口和 UUID
+
+@3kmfi6hp/nodejs-proxy 提供了 `--port` 和 `--uuid` 两个选项，用于自定义代理服务的端口和 UUID。默认情况下，端口号为 `7860`，UUID 为 `"d342d11e-d424-4583-b36e-524ab1f0afa4"`。
 
 ```bash
 nodejs-proxy -p 7860 -u d342d11e-d424-4583-b36e-524ab1f0afa4
+# 或者您可以使用以下命令
+nodejs-proxy --port 7860 --uuid d342d11e-d424-4583-b36e-524ab1f0afa4
 ```
 
-查看帮助
+### 查看帮助
+
+您可以通过 `--help` 选项查看 NodeJS-Proxy 的使用帮助：
 
 ```bash
 nodejs-proxy --help
@@ -44,19 +58,32 @@ Options:
       --help     Show help                                             [boolean]
 ```
 
-不是全局`-g`的话，需要在项目目录下执行：
+### 使用 npx
 
-```bash
-npm i @3kmfi6hp/nodejs-proxy
-```
-
-运行：
+如果您没有全局安装 @3kmfi6hp/nodejs-proxy，可以使用 npx 来运行 @3kmfi6hp/nodejs-proxy：
 
 ```bash
 npx nodejs-proxy
 ```
 
-使用 `--help` 查看帮助：
+同样，您也可以使用 `--port` 和 `--uuid` 选项来自定义端口和 UUID：
+
+```bash
+npx nodejs-proxy -p 7860 -u d342d11e-d424-4583-b36e-524ab1f0afa4
+# 或者您可以使用以下命令
+npx nodejs-proxy --port 7860 --uuid d342d11e-d424-4583-b36e-524ab1f0afa4
+```
+
+您也可以使用 `npx @3kmfi6hp/nodejs-proxy` 来替代 `npx nodejs-proxy`：
+
+```bash
+npx @3kmfi6hp/nodejs-proxy -p 7860 -u d342d11e-d424-4583-b36e-524ab1f0afa4
+npx @3kmfi6hp/nodejs-proxy -p 7860
+npx @3kmfi6hp/nodejs-proxy -u d342d11e-d424-4583-b36e-524ab1f0afa4
+npx @3kmfi6hp/nodejs-proxy
+```
+
+查看帮助：
 
 ```bash
 npx nodejs-proxy --help
@@ -67,6 +94,13 @@ Options:
                                [default: "d342d11e-d424-4583-b36e-524ab1f0afa4"]
       --help     Show help                                             [boolean]
 ```
+
+### 环境变量
+
+| 环境变量 | 描述             | 默认值                               |
+| -------- | ---------------- | ------------------------------------ |
+| PORT     | 代理服务的端口号 | 7860                                 |
+| UUID     | 代理服务的 UUID  | d342d11e-d424-4583-b36e-524ab1f0afa4 |
 
 ## Dockerfile 使用
 
