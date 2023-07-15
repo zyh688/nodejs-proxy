@@ -24,6 +24,6 @@
     "pug": "2.0.0-beta11"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/3Kmfi6HP"
+    "registry": "https://npm.pkg.github.com"
   }
 }
