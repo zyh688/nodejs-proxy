@@ -150,4 +150,22 @@ start = "nodejs-proxy"
 
 请参考具体的 `vless` 文档以获取更加详细的信息。部分参数可能依赖于具体的 `vless` 客户端和服务器的实现，可能需要根据实际情况进行调整。
 
-readme.md by GPT-4
+## 相关项目
+
+- [nodejs-proxy-fly.io](https://github.com/3Kmfi6HP/nodejs-proxy-fly.io) - @3kmfi6hp/nodejs-proxy for fly.io platform.
+- [nodejs-proxy-replit](https://github.com/3Kmfi6HP/nodejs-proxy-replit) - @3kmfi6hp/nodejs-proxy for replit platform.
+- [nodejs-proxy-codesandbox](https://github.com/3Kmfi6HP/nodejs-proxy-codesandbox) - @3kmfi6hp/nodejs-proxy for codesandbox platform.
+
+这些项目旨在为不同平台提供简单易用的 Node.js 代理。它们允许用户轻松地在其首选平台上部署和使用代理服务器，并提供了一种安全、私密地访问互联网的便捷方式。每个项目都针对特定的平台进行了定制，并提供了与平台特性和功能的无缝集成。
+
+## 免责声明
+
+本项目仅供学习和研究使用，严禁用于任何违反当地法律法规的行为。使用本项目所造成的任何后果，由使用者自行承担，本项目作者不承担任何法律责任。
+
+使用本项目即表示您已经阅读并同意上述免责声明。
+
+_This readme was written by GitHub Copilot._
+
+<!-- This readme was written by GitHub Copilot. -->
+
+<!-- @3kmfi6hp/nodejs-proxy -->
