@@ -1,7 +1,16 @@
 {
-  "name": "nodejs-proxy",
-  "version": "1.0.0",
+  "name": "@3kmfi6hp/nodejs-proxy",
+  "version": "1.0.1",
   "description": "A Node.js vless proxy",
+  "keywords": [
+    "vless",
+    "proxy",
+    "v2ray",
+    "v2ray-proxy",
+    "nodejs-proxy",
+    "nodejs-v2ray",
+    "nodejs-vless-proxy"
+  ],
   "main": "index.js",
   "bin": {
     "nodejs-proxy": "./cli.js"
