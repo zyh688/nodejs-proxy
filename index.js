@@ -1,3 +1,9 @@
+/**
+ * Creates a WebSocket server that proxies TCP connections to a remote server.
+ * @param {number} port - The port number to listen on for WebSocket connections.
+ * @param {string} uuid - The UUID to match against the first 16 bytes of the first message received from the client.
+ * @returns {void}
+ */
 module.exports = function (port, uuid) {
   const net = require('net');
   const { WebSocket, createWebSocketStream } = require('ws');
