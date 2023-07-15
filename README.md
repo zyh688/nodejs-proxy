@@ -36,7 +36,7 @@ nodejs-proxy
 
 ### 自定义端口和 UUID
 
-@3kmfi6hp/nodejs-proxy 提供了 `--port` 和 `--uuid` 两个选项，用于自定义代理服务的端口和 UUID。默认情况下，端口号为 `7860`，UUID 为 `"d342d11e-d424-4583-b36e-524ab1f0afa4"`。
+@3kmfi6hp/nodejs-proxy 提供 `--port` 和 `--uuid` 选项，用于自定义代理服务的端口和 UUID。默认端口 `7860`，默认 UUID `"d342d11e-d424-4583-b36e-524ab1f0afa4"`。
 
 ```bash
 nodejs-proxy -p 7860 -u d342d11e-d424-4583-b36e-524ab1f0afa4
