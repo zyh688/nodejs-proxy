@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-proxy",
+  "version": "1.0.0",
+  "description": "A Node.js vless proxy",
+  "main": "index.js",
+  "bin": {
+    "nodejs-proxy": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3Kmfi6HP/nodejs-proxy"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1",
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "http-proxy": "latest",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/3Kmfi6HP"
+  }
+}
