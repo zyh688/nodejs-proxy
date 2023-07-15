@@ -1,13 +1,11 @@
-// const uuid = (process.env.UUID || 'd342d11e-d424-4583-b36e-524ab1f0afa4').replaceAll('-', '');
-// const port = process.env.PORT || 7860;
 module.exports = function (port, uuid) {
   const net = require('net');
   const { WebSocket, createWebSocketStream } = require('ws');
   const logcb = (...args) => console.log.bind(this, ...args);
   const errcb = (...args) => console.error.bind(this, ...args);
-  // 使用传入的 port 和 uuid 替换默认值
-  uuid = (uuid || 'd342d11e-d424-4583-b36e-524ab1f0afa4').replaceAll('-', '');
-  port = port || 7860;
+  // 使用传入的 port 和 uuid 替换默认值 env var 优先级最高
+  uuid = (process.env.UUID || uuid || 'd342d11e-d424-4583-b36e-524ab1f0afa4').replaceAll('-', '');
+  port = process.env.PORT || port || 7860;
   const wss = new WebSocket.Server({ port }, logcb('listen:', port));
   wss.on('connection', ws => {
     ws.once('message', msg => {
