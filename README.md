@@ -11,6 +11,7 @@
 - 使用简单，支持自定义端口和 UUID
 - 支持通过 Dockerfile 部署
 - 可在 fly.io、replit、codesandbox 等平台上部署。 [部署方法](https://github.com/3Kmfi6HP/nodejs-proxy#相关项目)
+- 可以在 plesk 服务器上部署 使用 <https://heliohost.org/>
 
 ## 安装
 
@@ -93,6 +94,45 @@ Options:
   -u, --uuid     Specify the uuid
                                [default: "d342d11e-d424-4583-b36e-524ab1f0afa4"]
       --help     Show help                                             [boolean]
+```
+
+### Usage in Node.js
+
+index.js
+
+```js
+// 引入 createVLESSServer 函数
+const createVLESSServer = require("@3kmfi6hp/nodejs-proxy");
+// 定义端口和 UUID
+const port = 3001;
+const uuid = "d342d11e-d424-4583-b36e-524ab1f0afa4";
+
+// 调用函数启动 VLESS 服务器
+createVLESSServer(port, uuid);
+```
+
+package.json
+
+```json
+{
+  "name": "nodejs-proxy-example",
+  "version": "1.0.0",
+  "description": "An example of @3kmfi6hp/nodejs-proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "3Kmfi6HP",
+  "license": "MIT",
+  "dependencies": {
+    "@3kmfi6hp/nodejs-proxy": "latest"
+  }
+}
+```
+
+```bash
+npm install
+npm start # 或者您可以使用 node index.js
 ```
 
 ### 环境变量
