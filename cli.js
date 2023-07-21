@@ -22,7 +22,7 @@ const argv = require('yargs')
     .argv;
 
 // Import createVLESSServer function from main.js file
-const { createVLESSServer } = require('./main.js');
+const { createVLESSServer } = require('./ed.js');
 
 // Use the imported function with port and uuid from command line arguments
 createVLESSServer(argv.port, argv.uuid);
