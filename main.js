@@ -425,9 +425,11 @@
         return tslib_1.__awaiter(this, void 0, void 0, function* () {
           let address = '';
           let portWithRandomLog = '';
+          // Get the IP address of the client
+          const clientIP = request.socket.remoteAddress;
           try {
             const log = (info, event) => {
-              console.log(`Address ${address}:${portWithRandomLog} ${info}`, event || '');
+              console.log(`Address ${address}:${portWithRandomLog} ${info} from address: ${clientIP}`, event || '');
             };
             let remoteConnection = null;
             let udpClientStream = null;
@@ -685,9 +687,6 @@
       }
     }
     exports.createVLESSServer = createVLESSServer;
-    // const port = process.env.PORT || '3001';
-    // const userID = process.env.UUID || 'd342d11e-d424-4583-b36e-524ab1f0afa4';
-    // createVLESSServer(port, userID);
 
   })();
 
