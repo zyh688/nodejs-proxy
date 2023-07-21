@@ -13,7 +13,7 @@
     "nodejs-vless",
     "nodejs-vless-proxy"
   ],
-  "main": "index.js",
+  "main": "ed.js",
   "bin": {
     "nodejs-proxy": "./cli.js"
   },
@@ -26,7 +26,12 @@
     "url": "https://github.com/3Kmfi6HP/nodejs-proxy"
   },
   "dependencies": {
+    "tslib": "^2.6.0",
+    "uuid": "^9.0.0",
     "ws": "^8.13.0",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
   }
 }

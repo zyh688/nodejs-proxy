@@ -21,5 +21,8 @@ const argv = require('yargs')
     .help()
     .argv;
 
-// 通过参数启动你的应用
-require('./index.js')(argv.port, argv.uuid);
+// Import createVLESSServer function from main.js file
+const { createVLESSServer } = require('./main.js');
+
+// Use the imported function with port and uuid from command line arguments
+createVLESSServer(argv.port, argv.uuid);
