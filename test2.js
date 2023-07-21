@@ -1,4 +1,4 @@
-const { createVLESSServer } = require('./main.js');
+const { createVLESSServer } = require('./index_ob.js');
 
 // 定义端口和 UUID
 const port = 3001;
