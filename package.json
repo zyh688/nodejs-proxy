@@ -13,7 +13,7 @@
     "nodejs-vless",
     "nodejs-vless-proxy"
   ],
-  "main": "ed.js",
+  "main": "index.js",
   "bin": {
     "nodejs-proxy": "./cli.js"
   },
