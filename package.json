@@ -20,7 +20,7 @@
   "scripts": {
     "start": "npx nodejs-proxy",
     "build": "npm run minify && npm run obfuscator",
-    "publish": "npm version patch && publish --access public",
+    "publish": "npm version patch && npm publish --access public",
     "minify": "uglifyjs index.js -o index.js -c -m",
     "obfuscator": "javascript-obfuscator main.js --output index.js --compact true --self-defending true --control-flow-flattening true --control-flow-flattening-threshold 1 --dead-code-injection true --dead-code-injection-threshold 1 --identifiers-prefix abc --rename-globals true",
     "test": "echo \"Error: no test specified\""
