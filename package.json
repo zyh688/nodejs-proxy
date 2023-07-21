@@ -1,6 +1,6 @@
 {
   "name": "@3kmfi6hp/nodejs-proxy",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "A Node.js vless proxy",
   "keywords": [
     "vless",
