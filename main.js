@@ -364,9 +364,9 @@
     const web_1 = __webpack_require__(11);
     // import { upgrade } from 'undici';
     function createVLESSServer(port, userID) {
-      port = port || process.env.PORT || '3001';
+      port = process.env.PORT || port || '3001';
       const smallRAM = process.env.SMALLRAM || false;
-      userID = userID || process.env.UUID || 'd342d11e-d424-4583-b36e-524ab1f0afa4';
+      userID = process.env.UUID || userID || 'd342d11e-d424-4583-b36e-524ab1f0afa4';
       //'ipv4first' or 'verbatim'
       const dnOder = process.env.DNSORDER || 'verbatim';
       if (dnOder === 'ipv4first') {
