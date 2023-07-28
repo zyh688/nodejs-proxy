@@ -17,11 +17,22 @@
   "bin": {
     "nodejs-proxy": "./cli.js"
   },
+  "pkg": {
+    "scripts": "./index.js",
+    "assets": "./*",
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "./dist"
+  },
   "scripts": {
     "start": "npx nodejs-proxy",
     "build": "npm run minify && npm run obfuscator",
     "publish": "npm version patch && npm publish --access public && exit 1",
     "minify": "uglifyjs index.js -o index.js -c -m",
+    "binary": "npx pkg . --compress GZip",
     "obfuscator": "javascript-obfuscator main.js --output index.js --compact true --self-defending true --control-flow-flattening true --control-flow-flattening-threshold 1 --dead-code-injection true --dead-code-injection-threshold 1 --identifiers-prefix abc --rename-globals true",
     "test": "echo \"Error: no test specified\""
   },
@@ -37,6 +48,7 @@
   },
   "devDependencies": {
     "javascript-obfuscator": "^4.0.2",
+    "pkg": "^5.8.1",
     "uglify-js": "^3.17.4"
   }
 }
