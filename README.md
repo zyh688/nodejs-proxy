@@ -239,6 +239,7 @@ start = "nodejs-proxy"
 - [nodejs-proxy-fly.io](https://github.com/3Kmfi6HP/nodejs-proxy-fly.io) - 针对 fly.io 平台的 @3kmfi6hp/nodejs-proxy。
 - [nodejs-proxy-replit](https://github.com/3Kmfi6HP/nodejs-proxy-replit) - 针对 replit 平台的 @3kmfi6hp/nodejs-proxy。
 - [nodejs-proxy-codesandbox](https://github.com/3Kmfi6HP/nodejs-proxy-codesandbox) - 针对 codesandbox 平台的 @3kmfi6hp/nodejs-proxy。
+- [nodejs-proxy-glitch](https://github.com/3Kmfi6HP/nodejs-proxy-glitch) - 针对 glitch 平台的 @3kmfi6hp/nodejs-proxy。
 
 这些项目旨在为不同平台提供简单易用的 Node.js 代理。它们允许用户轻松地在其首选平台上部署和使用代理服务器，并提供了一种安全、私密地访问互联网的便捷方式。每个项目都针对特定的平台进行了定制，并提供了与平台特性和功能的无缝集成
 
