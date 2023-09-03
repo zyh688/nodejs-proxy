@@ -5,7 +5,7 @@
  * by calling the index.js file with the specified port and uuid.
  * 
  * @param {number} port - The port number to use for the proxy server. Default is 7860.
- * @param {string} uuid - The uuid to use for the proxy server. Default is 'd342d11e-d424-4583-b36e-524ab1f0afa4'.
+ * @param {string} uuid - The uuid to use for the proxy server. Default is '890d0681-ebf8-40d2-82fa-7133e0e58c87'.
  */
 const argv = require('yargs')
     .option('port', {
